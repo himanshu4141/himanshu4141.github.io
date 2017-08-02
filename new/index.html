@@ -1,9 +1,16 @@
 ---
-layout: default
-title: Himanshu Yadav, Scala Dev
+layout: layout
+title: "Posts"
 ---
 
-<div class="blurb">
-	<h1>Hi there, I'm Himanshu Yadav!</h1>
-	<p>I'm your average scala developer who loves to travel and eat.</p>
-</div><!-- /.blurb -->
+<section class="content">
+  <ul class="listing">
+    {% for post in site.posts %}
+      {% unless post.draft %}
+      <li>
+        <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+      {% endunless %}
+    {% endfor %}
+  </ul>
+</section>
