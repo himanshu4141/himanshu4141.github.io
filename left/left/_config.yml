@@ -1,0 +1,10 @@
+permalink: /posts/:title
+markdown: kramdown
+
+gems:
+  - jekyll-sitemap
+
+name: Himanshu Yadav
+url: http://himanshu-yadav.com
+description: A fantastic blog that is fantastic.
+twitter: himanshu4141
